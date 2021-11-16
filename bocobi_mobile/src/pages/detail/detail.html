@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="secondary">
+    <ion-title>
+      E-Health
+    </ion-title>
+    <button ion-button="" menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+<!-- 
+    <button ion-button clear (click)="logout()">
+      <ion-icon name="log-out"></ion-icon>
+    </button> -->
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <form (submit)="doLogin()"> -->
+  <!-- <h2><b> Bienvenue dans le Nouveau Monde </b></h2> -->
+
+  <ion-card id="image">
+    <img src="assets/imgs/bocobi 2 ret.png" alt="">
+  </ion-card>
+
+  <p id="fg"><b> Prêt à te lancer ??</b></p>
+  <p id="fg">Suivez nous ! <a target="_blank" rel="noopener noreferrer"
+      href="https://ionicframework.com/docs/components">clique ici</a></p>
+  <!-- <button (tap)="alertAction()" ion-button full>Validation</button> -->
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="" floating> login </ion-label>
+      <ion-input [(ngModel)]="model.email" name="email" type="text"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="" floating> Password </ion-label>
+      <ion-input [(ngModel)]="model.password" name="password" type="password"> </ion-input>
+    </ion-item>
+    
+
+    <button id="presentButto" (tap)="alerpass()" slot="end">Mot de passe oublié ?</button>
+    <button (click)="login()" id="presentButtn">CONNEXION</button>
+  </ion-list>
+  <!-- </form> -->
+  <button id="presentBut" (click)="register()">INSCRIPTION</button>
+</ion-content>

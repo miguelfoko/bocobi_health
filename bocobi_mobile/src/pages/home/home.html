@@ -1,0 +1,38 @@
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="SlideChanged()">
+    <ion-slide>
+      <div class="diag" style="background : url('assets/imgs/whitebg.svg') no-repeat">
+      <ion-icon ios="ios-analytics" md="md-analytics" color="secondary"></ion-icon>
+      </div>
+
+      <div>
+        <h2 id="tiil">Ergonomie</h2>
+        <p id="text">Nous nous adaptons à vos différents besoins !!</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background : url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-trophy" md="md-trophy" color="secondary"></ion-icon>
+        </div>
+  
+        <div>
+          <h2 id="tiil">Santé+</h2>
+          <p id="text">Faites vous examiner !!</p>
+        </div>
+  
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background : url('assets/imgs/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-chatboxes" md="md-chatboxes" color="secondary"></ion-icon>
+        </div>
+  
+        <div>
+          <h2 id="tiil">Messagerie</h2>
+          <p id="text">chater avec vos différents internautes !</p>
+        </div>
+    </ion-slide>
+  </ion-slides>
+  <button block (tap)="skip()" id="skip">{{ skipMsg }}</button>
+</ion-content>

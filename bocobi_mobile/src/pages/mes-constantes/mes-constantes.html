@@ -1,0 +1,86 @@
+<!--
+  Generated template for the MesConstantesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Mes Constantes</ion-title>
+    <button ion-button="" menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-9>
+        <h2>Choix d'un module sur lequel se connecter</h2>
+      </ion-col>
+      <ion-col col-3 align-self-center>
+        <div style="text-align: right;">
+          <button ion-button (click)="scan()" slot="end">
+            <ion-icon name="Bluetooth"></ion-icon>
+            <p>Scan</p>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- <ion-list>
+    <button ion-item *ngFor="let device of divises">
+      <h2>{{device.name}}</h2>
+    </button>
+  </ion-list> -->
+
+  <p>Note: cliquer sur le module pour vous connecter</p>
+
+  <ion-grid>
+    <ion-row>
+      <h3>Terminal de communication</h3>
+    </ion-row>
+    <ion-row>
+      <ion-col col-9>
+        <ion-input type="text" placeholder="text à envoyer" style="background-color: white;"></ion-input>
+      </ion-col>
+      <ion-col col-3 align-self-center>
+        <div style="text-align: right;">
+          <button ion-button>Envoyer</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <ion-list> -->
+    <!-- <button ion-item *ngFor="let serialData of serialDatas">
+      <ion-icon *ngIf="serialData.out==true" name="log-out"></ion-icon>
+      <ion-icon *ngIf="serialData.out==false" name="log-in"></ion-icon>
+      {{ serialData.data }}
+    </button> -->
+
+    <!-- <ion-list> 
+      <button ion-item *ngFor="let device of devices">
+        <h2>{{ device.name || 'Unnamed' }}</h2>
+        <p>{{ device.id }}</p>
+        <p>RSSI: {{ device.rssi }}</p>
+      </button>  
+     </ion-list>  -->
+  <!-- </ion-list> -->
+
+
+    <ion-list> 
+      <button ion-item *ngFor="let device of devices" (click)="deviceSelected(device)">
+        <h2>{{ device.name || 'Unnamed' }}</h2>
+        <p>{{ device.id }}</p>
+        <p>RSSI: {{device.rssi}}</p>
+      </button>  
+     </ion-list> 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>{{ statusMessage }}</p>
+  </ion-toolbar>
+</ion-footer>

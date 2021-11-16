@@ -1,0 +1,33 @@
+<!--
+  Generated template for the BookAppointmentConfirmationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-grid *ngIf="pageReady">
+  <ion-card>
+    <div class="div-top">
+      <img class="card-top-icon" src="assets/icon/checklist.svg"/>
+    </div>
+
+    <div *ngIf="pageReady" padding>
+      <ion-label class="lbl-title">{{ 'DATE' }}</ion-label>
+      <h3 class="lbl-value">{{options.date}}</h3>
+      <ion-label class="lbl-title">{{ 'TIME SLOT' }}</ion-label>
+      <h3 class="lbl-value">{{ options.time }}</h3>
+    </div>
+
+    <div padding text-center>
+
+      <button ion-button round icon-right color="secondary" (click)="confirmOnClick()">{{ 'CONFIRM' }}
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </div>
+
+    <div padding text-center>
+
+      <button ion-button round icon-right color="light" (click)="cancelOnClick()">{{ 'CANCEL' }}
+      </button>
+    </div>
+
+  </ion-card>

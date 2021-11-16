@@ -1,0 +1,39 @@
+.diag{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 66%;
+    background:#32db64;
+}
+ion-icon{
+    margin-top: 40%;
+    font-size: 7em;
+}
+#tiil{
+    margin-top: 80% !important;
+    font-weight: bold;
+    font-size: 1em;
+}
+#text{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-size: .9em;
+    text-align: center;
+}
+.swiper-pagination-bullet-active {
+    background:#32db64;
+}
+.swiper-pagination{
+    bottom: 12% !important;
+}
+#skip{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background: none !important;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}

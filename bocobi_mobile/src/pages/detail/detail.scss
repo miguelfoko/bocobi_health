@@ -1,0 +1,69 @@
+p{
+    text-align: justify;
+}
+h2{
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+}
+#presentBut{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+display: block;
+margin: 16px auto;
+padding: 11px;
+color: white;
+background-color: #03be3b;
+width: 100%;
+border-radius: 10px;
+}
+#presentButtn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    margin: 16px auto;
+    padding: 11px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: 2px solid #03be3b;
+    border-radius: 10px;
+    }
+
+#presentButto{
+    color: rgb(0, 0, 185);
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: end;
+    display: block;
+    margin: 5px auto;
+    padding: 8px;
+    }
+#fg{
+    text-align: center;
+}
+#gd{
+    text-align: center;
+}
+#image{
+    text-align: center;
+    width: 80%;
+    padding: 15%;
+    margin: 11%;
+    top: auto;
+    font-size: 66%;
+    // filter: drop-shadow(0 0 0.90rem #03be3b);
+}
+
+ion-card img{
+    width: auto;
+}
+
+#skip{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background: none !important;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}
